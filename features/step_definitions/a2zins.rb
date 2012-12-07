@@ -6,9 +6,7 @@ Given /^I am on "(.*?)" page$/ do |site|
   case site
   when 'a2z insurance'
     visit ("http://www.a2zinsuranceservices.net/")
-  when 'Pixo'
-    visit ("http://www.pixonesto.com/aboutus.html")
-  when 'Long Term Care'
+    when 'Long Term Care'
      visit ("http://www.a2zinsuranceservices.net/long-term-care-insurance")
   when 'Get a Quote'
     visit ('http://www.a2zinsuranceservices.net/form1.html')
@@ -38,7 +36,6 @@ end
 
 Then /^I push "(.*?)"$/ do |quote|
    page.find(:xpath, "//a[@href='/form1.html']").click
-  #page.find(:xpath, "//div[@id='art-main']/div[1]/div[10]/div[2]/div/div/div[1]/div/div[1]/div[1]/div/p[8]/strong/em/a[@href='/form.html']").click
 end
 
 When /^I select checkbox for home$/ do

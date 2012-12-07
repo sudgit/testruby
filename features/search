@@ -1,0 +1,18 @@
+#Author: Sudha 
+#Date created: 12/01/2012
+#Last Edited:
+#Last Edited by:
+#Date signed:
+
+
+Feature: Search 
+	As an internet user I should be able to search for any specific items link jobs using google search
+	
+	Acceptence Criteria: Story location
+	
+Background:
+	Given I am on "google" page
+
+@wip	
+@scene1
+Scenario: Test the functionality

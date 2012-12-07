@@ -6,17 +6,10 @@ require 'capybara/dsl'
 require 'capybara/cucumber'
 require 'capybara-screenshot'
 require 'yaml'
-require 'logger'
-require 'log.rb'
-require 'send-keys.rb'
-
 
 Capybara.run_server = false
 Capybara.default_driver = :selenium
-#Capybara.app_host = 'http://www.google.com'
 
-#global variable
-$itemCount = 0
 begin 
   Selenium::WebDriver::Firefox.path = "C:/Program Files/Mozilla Firefox/firefox.exe"
   rescue

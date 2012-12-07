@@ -4,8 +4,6 @@
 Given /^I am on "(.*?)" page$/ do |site|
   puts "site: " + site
   case site
-  when 'google'
-    visit ("http://www.google.com")
   when 'a2z insurance'
     visit ("http://www.a2zinsuranceservices.net/")
   when 'Pixo'
@@ -14,8 +12,6 @@ Given /^I am on "(.*?)" page$/ do |site|
      visit ("http://www.a2zinsuranceservices.net/long-term-care-insurance")
   when 'Get a Quote'
     visit ('http://www.a2zinsuranceservices.net/form1.html')
-  when 'Al Zeidlers home'
-    visit ('http://www.zeidlerinsurance.com/')
   end
 end
 
